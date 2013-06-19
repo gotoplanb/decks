@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<style>
+			h1, h2, h3, h4, h5, h6 {text-align: left;}
+			header h1, header h2, header h3, header h4, header h5, header h6 {text-align: center;}
+			p {clear: left;}
+		</style>
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<header>
+						<h1>Data Journalism</h1>
+						<h3>The past, present and future.</h3>
+						<p>
+							<small>Dave Stanton / <a href="http://twitter.com/gotoplanb">@gotoplanb</a></small>
+						</p>
+					</header>
+				</section>
+
+				<section>
+					<h1>What is journalism?</h1>
+					<h3>Report, edit and distribute information</h3>
+					<h3>Objectivity vs advocacy</h3>
+				</section>
+
+				<section>
+					<h1>Parallels with OSS</h1>
+					<h3>Transparency and collective action</h3>
+				</section>
+
+				<section>
+					<h1>Shared challenges</h1>
+					<h3>Privacy and security</h3>
+				</section>
+
+				<section>
+					<h1>Onion Browser for iOS</h1>
+					<img src="opensourcebridge-2013/tigas.jpeg" />
+					<p><a href="http://twitter.com/mtigas">Mike Tigas</a> of ProPublica</p>
+				</section>
+
+				<section>
+					<h1>What is data journalism?</h1>
+					<h3>Interviewing data instead of humans</h3>
+				</section>
+				
+				<section>
+					<h1>Computer Assisted Reporting</h1>
+					<h3>Spreadsheets. Lots of spreadsheets.</h3>
+					<h3>Pragmatists not computer scientists.</h3>
+				</section>
+				
+				<section>
+					<h1>Professional organizations</h1>
+					<h3><a href="http://ire.org/">Investigative Reporters &amp; Editors</a></h3>
+					<h3><a href="http://journalists.org/">Online News Association</a></h3>
+				</section>
+				
+				<section>
+				    <header>
+    					<h1>We share tools</h1>
+					</header>
+				</section>
+				
+				<section>
+					<h1>Python</h1>
+					<h3>Ellington CMS &rarr; Django</h3>
+					<a href="http://en.wikipedia.org/wiki/File:Adrian_Holovaty_in_2009.jpg"><img src="opensourcebridge-2013/holovaty.jpg" style="float: left; width: 50%" /></a>
+				</section>
+				
+				<section>
+					<h1>JavaScript</h1>
+					<h3>DocumentCloud &rarr; Backbone.js and Underscore.js</h3>
+					<a href="http://www.google.com/imgres?imgurl=http%3A%2F%2Ffarm8.staticflickr.com%2F7271%2F7616854510_c4711869fd_q.jpg&imgrefurl=http%3A%2F%2Fwww.flickr.com%2Fphotos%2F82674930%40N06%2F7616854510%2F&docid=nxU8LZQR1CXiDM&tbnid=QldK2JX58tVuoM&w=500&h=333&ei=qS_CUbC-O6GmigKyqoGgCw&ved=0CAUQxiAwAw&iact=c"><img src="opensourcebridge-2013/ashkenas.jpg" style="float: left; width: 50%" /></a>
+				</section>
+				
+				<section>
+					<h1>foo</h1>
+					<h3>bar</h3>
+				</section>
+				
+				<section>
+					<h1>foo</h1>
+					<h3>bar</h3>
+				</section>
+				
+				<section>
+					<h1>foo</h1>
+					<h3>bar</h3>
+				</section>
+
+				<section>
+					<h1>-30-</h1>
+					<h3>BY Dave Stanton / @gotoplanb</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
